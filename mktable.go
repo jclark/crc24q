@@ -24,6 +24,7 @@ func main() {
 
 const poly = 0x1864CFB
 
+// This is based on the crc_init function from crc24q.c in the gpsd project.
 func initTable(t *[256]uint32) {
 	t[1] = poly
 	h := t[1]
